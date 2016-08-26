@@ -38,15 +38,14 @@ header {
   color: white;
 }
 header .container {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 header .intro-text .name {
   display: block;
   font-family: 'Space Mono', monospace;
-  text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 400;
-  font-size: 2em;
+  font-weight: 700;
+  font-size: 1em;
 }
 
 header .intro-text .skills {
@@ -55,8 +54,8 @@ header .intro-text .skills {
 }
 @media (min-width: 768px) {
   header .container {
-    padding-top: 100px;
-    padding-bottom: 120px;
+    padding-top: 80px;
+    padding-bottom: 110px;
   }
   header .intro-text .name {
     font-size: 4.75em;
@@ -67,7 +66,6 @@ header .intro-text .skills {
   header .email{
     z-index: 99;
     max-width: 100vw;
-    min-height: 100px;
     padding-top: 25px;
     background-color: transparent;
     font-size: 16px;
@@ -75,8 +73,7 @@ header .intro-text .skills {
     text-align:right;
     border-radius: 0px;
     position: relative;
-    bottom: 20%;
-    
+    bottom: 2%;
 }
 }
 }
