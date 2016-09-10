@@ -2248,6 +2248,16 @@ pre code {
     margin-left: 0;
   }
 }
+
+.gut-1 { margin-right: -3px; margin-left: -3px; }
+.gut-1 > [class*="col-"] { padding-right: 3px !important; padding-left: 3px !important; }
+
+.gut-2 { margin-right: -6px; margin-left: -6px; }
+.gut-2 > [class*="col-"] { padding-right: 6px !important; padding-left: 6px !important; }
+
+.gut-3 { margin-right: -12px; margin-left: -12px; }
+.gut-3 > [class*="col-"] { padding-right: 12px !important; padding-left: 12px !important; }
+
 table {
   background-color: transparent;
 }
@@ -4493,8 +4503,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: transparent;
 }
 .navbar-default .navbar-brand {
   color: #777;

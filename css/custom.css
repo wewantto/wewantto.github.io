@@ -3,8 +3,9 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-body {
-  font-family:'Space Mono', monospace;
+
+ body {
+  font-family: HendersonSansBold; 
   overflow-x: hidden;
 }
 p {
@@ -13,13 +14,17 @@ p {
 p.small {
   font-size: 16px;
 }
-a,
+a{
+  color: #FF8551;
+  outline: none;
+}
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #18BC9C;
+  color: #06AED5;
   outline: none;
+  text-decoration: none;
 }
 h1,
 h2,
@@ -27,60 +32,87 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Space Mono', monospace;
+  font-family: HendersonSansBold; 
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
+  padding-bottom: 2%;
 }
 
 header {
   text-align: center;
-  background: #18BC9C;
+  background: #06AED5;
   color: white;
+  height: 100vh;
+  width: 100vw;
 }
+
+@media (max-width: 768px) {
+  header {
+    height: auto;
+  }
+}
+
 header .container {
-  padding-bottom: 10px;
+  padding-bottom: 10%;
 }
+
 header .intro-text .name {
+  z-index: 85;
+  text-align: left;
+  margin-left: 5%;
   display: block;
-  font-family: 'Space Mono', monospace;
-  letter-spacing: 1px;
+  padding-top: 10%;
+  font-family: HendersonSansBold; 
   font-weight: 700;
-  font-size: 1em;
+  font-size: 1.65em;
+}
+
+header .avoidwrap 
+{ 
+  display:inline-block; 
 }
 
 header .intro-text .skills {
   font-size: 1.25em;
   font-weight: 300;
 }
+
 @media (min-width: 768px) {
   header .container {
     padding-top: 80px;
-    padding-bottom: 110px;
+    padding-bottom: 20%;
+  
   }
+
   header .intro-text .name {
     font-size: 4.75em;
   }
   header .intro-text .skills {
     font-size: 1.75em;}
   }
-  header .email{
+
+
+  header .waves{
     z-index: 99;
-    max-width: 100vw;
-    padding-top: 25px;
-    background-color: transparent;
-    font-size: 16px;
-    letter-spacing: 1px;
-    text-align:right;
-    border-radius: 0px;
-    position: relative;
-    bottom: 2%;
+    width: 85%;
+    float:left;
+    margin-left: 4%;
+    margin-right: 4%;
+  
+
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
 }
-}
-}
+
+
 .navbar-custom {
   background: transparent;
-  font-family: 'Space Mono', monospace;
-  text-transform: uppercase;
+  font-family: HendersonSansBold; 
+  text-transform: none;
   font-weight: 700;
   border: none;
   text-align: right;
@@ -102,23 +134,26 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li a {
   color: white;
+  background: transparent;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #333;
+  color: #F8C537;
+  background: #06AED5;
 }
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
   color: white;
+  background: transparent;
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #18BC9C;
+  background: transparent;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
-  background: #ffffff;
+  background: transparent;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -128,9 +163,9 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #18BC9C;
+  background-color: #06AED5;
   color: white;
-  border-color: #18BC9C;
+  border-color: #ffffff;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -148,86 +183,158 @@ header .intro-text .skills {
   .navbar-custom.affix {
     padding: 10px 0;
   }
-  .navbar-custom.affix .navbar-brand {
+  .navbar-custom.affix .navbar-brand{
     font-size: 1.5em;
   }
+}
+.st0 {
+  stroke-dasharray: 460;
+  stroke-dashoffset: 0;
+  -webkit-animation dash 4s linear infinite;
+  -o-animation:dash 4s linear infinite;
+  -moz-animation: dash 4s linear infinite;
+  animation: dash 4s alternate infinite;
+}
+@-webkit-keyframes dash{
+  from {
+    stroke-dashoffset: 460;
+  }
+  to{stroke-dashoffset: 0;}
+}
+repeatCount="indefinite"
+}
+
+section {
+  padding: 100px 0;
+}
+section .container{
+  padding: 10%;
+}
+section .shadow-box h2{
+  margin: 0;
+  font-size: 3em;
+}
+section.success {
+  background: #F8C537;
+  color: #06AED5;
+}
+@media (max-width: 767px) {
+  section {
+    padding: 75px 0;
+  }
+  section.first {
+    padding-top: 75px;
+  }
+}
+
+.shadow-box { 
+  background: #fff; 
+  -webkit-box-shadow: 5px 5px 0px 0px #FF8552; 
+  -moz-box-shadow: 5px 5px 0px 0px #FF8552; 
+  box-shadow: 5px 5px 0px 0px #FF8552; 
+  margin-bottom: 25px;
+}
+
+.shadow-box h1{
+  font-size: 1.7em;
+  padding:3%;
+}
+
+.shadow-box p{
+  font-size: 1.4em;
+  padding:3%;
+}
+
+
+@media (min-width: 768px) { 
+  .shadow-box { 
+    -webkit-box-shadow: 10px 10px 0px 0px #FF8552; 
+    -moz-box-shadow: 10px 10px 0px 0px #FF8552; 
+    box-shadow: 10px 10px 0px 0px #FF8552; 
+    margin-bottom: 25px;
+  } 
+
+  .shadow-box p, .shadow-box h2{
+    padding:3%;
+  }
+
 }
 
 
 #portfolio .portfolio-item {
-    right: 0;
-    margin: 0 0 15px;
+  right: 0;
+  margin: 0 0 15px;
 }
 
 #portfolio .portfolio-item .portfolio-link {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    max-width: 400px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 400px;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    transition: all ease .5s;
-    background: rgba(15,15,15, .9);/* Fallback when no plugin support */
-    background: rgba(15,15,15, .9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  transition: all ease .5s;
+  background: rgba(15,15,15, .9);/* Fallback when no plugin support */
+  background: rgba(15,15,15, .9);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 20px;
-    margin-top: -12px;
-    text-align: center;
-    font-size: 20px;
-    color: #fff;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 20px;
+  margin-top: -12px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
-    margin-top: -12px;
+  margin-top: -12px;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
-    margin: 0;
+  margin: 0;
 }
 
 #portfolio .portfolio-item .portfolio-caption {
-    margin: 0 auto;
-    padding: 25px;
-    max-width: 400px;
-    text-align: center;
-    background-color: #fff;
+  margin: 0 auto;
+  padding: 25px;
+  max-width: 400px;
+  text-align: center;
+  background-color: #fff;
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
-    margin: 0;
-    text-transform: none;
+  margin: 0;
+  text-transform: none;
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
-    margin: 0;
-    font-size: 16px;
+  margin: 0;
+  font-size: 16px;
 }
 
 #portfolio * {
-    z-index: 2;
+  z-index: 2;
 }
 
 @media(min-width:767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
-    }
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
 }
 .floating-label-form-group {
   position: relative;
@@ -424,82 +531,82 @@ fieldset[disabled] .btn-success.active {
 }
 
 .portfolio-modal .modal-content {
-    padding: 100px 0;
-    min-height: 100%;
-    border: 0;
-    border-radius: 0;
-    text-align: center;
-    background-clip: border-box;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+  padding: 100px 0;
+  min-height: 100%;
+  border: 0;
+  border-radius: 0;
+  text-align: center;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .portfolio-modal .modal-content h2 {
-    margin-bottom: 15px;
-    font-size: 3em;
+  margin-bottom: 15px;
+  font-size: 3em;
 }
 
 .portfolio-modal .modal-content p {
-    margin-bottom: 30px;
-    font-size: 14px;
+  margin-bottom: 30px;
+  font-size: 14px;
 }
 
 .portfolio-modal .modal-content p.item-intro {
-    margin: 20px 0 30px;
-    font-size: 14px;
+  margin: 20px 0 30px;
+  font-size: 14px;
 }
 
 .portfolio-modal .modal-content ul.list-inline {
-    margin-top: 0;
-    margin-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .portfolio-modal .modal-content img {
-    margin-top: 10px;
-    margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 
 .portfolio-modal .close-modal {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    width: 75px;
-    height: 75px;
-    background-color: transparent;
-    cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .portfolio-modal .close-modal:hover {
-    opacity: .3;
+  opacity: .3;
 }
 
 .portfolio-modal .close-modal .lr {
-    z-index: 1051;
-    width: 3px;
-    height: 45px;
-    margin-left: 35px;
-    background-color: #222;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+  z-index: 1051;
+  width: 3px;
+  height: 45px;
+  margin-left: 35px;
+  background-color: #222;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .portfolio-modal .close-modal .lr .rl {
-    z-index: 1052;
-    width: 3px;
-    height: 45px;
-    background-color: #222;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
+  z-index: 1052;
+  width: 3px;
+  height: 45px;
+  background-color: #222;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 ::-moz-selection {
-    text-shadow: none;
-    background: #{{ site.data.template.color.primary }};
+  text-shadow: none;
+  background: #{{ site.data.template.color.primary }};
 }
 
 ::selection {
-    text-shadow: none;
-    background: #{{ site.data.template.color.primary }};
+  text-shadow: none;
+  background: #{{ site.data.template.color.primary }};
 }
