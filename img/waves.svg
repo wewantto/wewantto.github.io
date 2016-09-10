@@ -10,10 +10,10 @@
 				.st0 {
 				stroke-dasharray: 350;
 				stroke-dashoffset: 0;
-				-webkit-animation dash 1.5s linear infinite;
-				-o-animation:dash 1.5s linear infinite;
-				-moz-animation: dash 1.5s linear infinite;
-				animation: dash 1.5s alternate infinite;
+				-webkit-animation dash 1.55s linear infinite;
+				-o-animation:dash 1.55s linear infinite;
+				-moz-animation: dash 1.55s linear infinite;
+				animation: dash 1.55s alternate infinite;
 				}
 				@-webkit-keyframes dash{
 				from {

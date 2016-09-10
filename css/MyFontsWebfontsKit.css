@@ -24,5 +24,13 @@
 @import url("//hello.myfonts.net/count/3200e6");
 
   
-@font-face {font-family: 'HendersonSansBold';src: url('webfonts/3200E6_0_0.eot');src: url('webfonts/3200E6_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3200E6_0_0.woff2') format('woff2'),url('webfonts/3200E6_0_0.woff') format('woff'),url('webfonts/3200E6_0_0.ttf') format('truetype');}
+@font-face {
+	font-family: 'HendersonSansBold';
+	src: url('webfonts/3200E6_0_0.eot');
+	src: url('webfonts/3200E6_0_0.eot?#iefix') 
+	format('embedded-opentype'),url('webfonts/3200E6_0_0.woff2') f
+	ormat('woff2'),url('webfonts/3200E6_0_0.woff') 
+	format('woff'),url('webfonts/3200E6_0_0.ttf') 
+	format('truetype');
+}
  
