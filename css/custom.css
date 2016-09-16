@@ -238,9 +238,9 @@ section.success {
 
 .shadow-box { 
   background: #fff; 
-  -webkit-box-shadow: 5px 5px 0px 0px #FF8552; 
-  -moz-box-shadow: 5px 5px 0px 0px #FF8552; 
-  box-shadow: 5px 5px 0px 0px #FF8552; 
+  -webkit-box-shadow: -5px 5px 0px 0px #FF8552; 
+  -moz-box-shadow: -5px 5px 0px 0px #FF8552; 
+  box-shadow: -5px 5px 0px 0px #FF8552; 
   margin-bottom: 25px;
 }
 
@@ -257,9 +257,9 @@ section.success {
 
 @media (min-width: 768px) { 
   .shadow-box { 
-    -webkit-box-shadow: 10px 10px 0px 0px #FF8552; 
-    -moz-box-shadow: 10px 10px 0px 0px #FF8552; 
-    box-shadow: 10px 10px 0px 0px #FF8552; 
+    -webkit-box-shadow: -11px 10px 0px 0px #FF8552; 
+    -moz-box-shadow: -11px 10px 0px 0px #FF8552; 
+    box-shadow: -11px 10px 0px 0px #FF8552; 
     margin-bottom: 25px;
   } 
 
